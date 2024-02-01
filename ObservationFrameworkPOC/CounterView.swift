@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CounterView : View {
-    @Environment(\.appStore) var appStore
+
+    @Binding var appStore:Store<MainAppState, MainAppAction>
     
     var body: some View {
         VStack {
@@ -33,3 +34,9 @@ struct CounterView : View {
     }
 }
 
+#Preview {
+    CounterView(appStore:.constant(Store<MainAppState, MainAppAction>(
+        initialState: .init(count: 0, isLoggedIn: false),
+        reduce: appReducer
+    )))
+}

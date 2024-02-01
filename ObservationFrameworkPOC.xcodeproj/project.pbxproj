@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FA942782B6B9480008FE8A9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA942772B6B9480008FE8A9 /* LoginView.swift */; };
 		9FAFDC3C2B6942BC002F3C3B /* ObservationFrameworkPOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAFDC3B2B6942BC002F3C3B /* ObservationFrameworkPOCApp.swift */; };
 		9FAFDC3E2B6942BC002F3C3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAFDC3D2B6942BC002F3C3B /* ContentView.swift */; };
 		9FAFDC402B6942BD002F3C3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FAFDC3F2B6942BD002F3C3B /* Assets.xcassets */; };
 		9FAFDC442B6942BD002F3C3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FAFDC432B6942BD002F3C3B /* Preview Assets.xcassets */; };
-		9FAFDC4B2B6942F5002F3C3B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAFDC4A2B6942F5002F3C3B /* Store.swift */; };
 		9FAFDC4E2B69456A002F3C3B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAFDC4D2B69456A002F3C3B /* State.swift */; };
 		9FAFDC522B694AAA002F3C3B /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAFDC512B694AAA002F3C3B /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FA942772B6B9480008FE8A9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9FAFDC382B6942BC002F3C3B /* ObservationFrameworkPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationFrameworkPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAFDC3B2B6942BC002F3C3B /* ObservationFrameworkPOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationFrameworkPOCApp.swift; sourceTree = "<group>"; };
 		9FAFDC3D2B6942BC002F3C3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9FAFDC3F2B6942BD002F3C3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FAFDC412B6942BD002F3C3B /* ObservationFrameworkPOC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ObservationFrameworkPOC.entitlements; sourceTree = "<group>"; };
 		9FAFDC432B6942BD002F3C3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9FAFDC4A2B6942F5002F3C3B /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		9FAFDC4D2B69456A002F3C3B /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		9FAFDC512B694AAA002F3C3B /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +61,7 @@
 				9FAFDC4C2B694542002F3C3B /* state */,
 				9FAFDC3B2B6942BC002F3C3B /* ObservationFrameworkPOCApp.swift */,
 				9FAFDC3D2B6942BC002F3C3B /* ContentView.swift */,
+				9FA942772B6B9480008FE8A9 /* LoginView.swift */,
 				9FAFDC512B694AAA002F3C3B /* CounterView.swift */,
 				9FAFDC3F2B6942BD002F3C3B /* Assets.xcassets */,
 				9FAFDC412B6942BD002F3C3B /* ObservationFrameworkPOC.entitlements */,
@@ -80,7 +81,6 @@
 		9FAFDC4C2B694542002F3C3B /* state */ = {
 			isa = PBXGroup;
 			children = (
-				9FAFDC4A2B6942F5002F3C3B /* Store.swift */,
 				9FAFDC4D2B69456A002F3C3B /* State.swift */,
 			);
 			path = state;
@@ -156,7 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FAFDC4B2B6942F5002F3C3B /* Store.swift in Sources */,
+				9FA942782B6B9480008FE8A9 /* LoginView.swift in Sources */,
 				9FAFDC4E2B69456A002F3C3B /* State.swift in Sources */,
 				9FAFDC3E2B6942BC002F3C3B /* ContentView.swift in Sources */,
 				9FAFDC3C2B6942BC002F3C3B /* ObservationFrameworkPOCApp.swift in Sources */,

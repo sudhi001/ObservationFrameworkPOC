@@ -10,29 +10,22 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @Environment(\.appStore) var appStore
-    @Environment(\.loginStore) var loginStore
-    
+    @State var appStore = Store<MainAppState, MainAppAction>(
+         initialState: .init(count: 0, isLoggedIn: false),
+         reduce: appReducer
+     )
     var body: some View {
         VStack {
-            CounterView()
+            if !appStore.state.isLoggedIn{
+                LoginView()
+            }
+            CounterView(appStore: $appStore)
         }
     }
     
      
 }
-struct LoginView: View {
-    @Environment(\.loginStore) var loginStore
-    var body: some View {
-        VStack {
-           // TextField("Username", text:$loginStore.state.username)
-           // SecureField("Password", text:$oginStore.state.password)
-            Button(action: { loginStore.send(.login) }) {
-                Text("Log in")
-            }
-        }
-    }
-}
+
 #Preview {
     ContentView()
 }
